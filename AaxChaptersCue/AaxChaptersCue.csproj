@@ -1,16 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+	
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
+	<OutputType>WinExe</OutputType>
+	<TargetFramework>net6.0-windows</TargetFramework>
+	<Version>0.1.0</Version>
+	<Nullable>enable</Nullable>
+	<UseWindowsForms>true</UseWindowsForms>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<PublishReadyToRun>true</PublishReadyToRun>
+	<Authors>MrGneissGuy</Authors>
+	<Company>Just Me, Inc.</Company>
+	<Description> Download Aax file chapter markers from audible servers and save them as .cue files. </Description>
+	<RequireLicenseAcceptance>false</RequireLicenseAcceptance>
+	<Tags>Audible AAX chapters cue cuesheet</Tags>
+	<ProjectUrl>https://github.com/Mbucari/AaxChaptersCue</ProjectUrl>
+	<PackageProjectUrl>https://github.com/Mbucari/AaxChaptersCue</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/Mbucari/AaxChaptersCue</RepositoryUrl>
+	<PackageProjectUrl>https://github.com/Mbucari/AaxChaptersCue</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/Mbucari/AaxChaptersCue</RepositoryUrl>
+	<RepositoryType>Git</RepositoryType>
+	<PackageTags>Audible AAX chapters cue cuesheet</PackageTags>
+	<NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AAXClean" Version="0.4.9" />
-    <PackageReference Include="AudibleApi" Version="4.3.1.1" />
+	<PackageReference Include="AAXClean" Version="0.4.9" />
+	<PackageReference Include="AudibleApi" Version="4.3.1.1" />
   </ItemGroup>
 
 </Project>

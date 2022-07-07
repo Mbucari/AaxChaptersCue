@@ -46,7 +46,7 @@
 			this.listView1.FullRowSelect = true;
 			this.listView1.Location = new System.Drawing.Point(0, 37);
 			this.listView1.Name = "listView1";
-			this.listView1.Size = new System.Drawing.Size(407, 363);
+			this.listView1.Size = new System.Drawing.Size(454, 363);
 			this.listView1.TabIndex = 0;
 			this.listView1.UseCompatibleStateImageBehavior = false;
 			this.listView1.View = System.Windows.Forms.View.Details;
@@ -56,7 +56,7 @@
 			// filePathCol
 			// 
 			this.filePathCol.Text = "Filename";
-			this.filePathCol.Width = 400;
+			this.filePathCol.Width = 450;
 			// 
 			// comboBox1
 			// 
@@ -79,7 +79,7 @@
 			// button1
 			// 
 			this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.button1.Location = new System.Drawing.Point(303, 7);
+			this.button1.Location = new System.Drawing.Point(350, 7);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(92, 23);
 			this.button1.TabIndex = 3;
@@ -91,7 +91,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(407, 400);
+			this.ClientSize = new System.Drawing.Size(454, 400);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.comboBox1);

@@ -14,6 +14,14 @@ namespace AaxChaptersCue
 			InitializeComponent();
 			comboBox1.Items.AddRange(AudibleApi.Localization.Locales.Select(l => l.Name).ToArray());
 			comboBox1.SelectedIndex = 0;
+			AddListviewInstruction();
+		}
+		private void AddListviewInstruction()
+		{
+			var lvi = new ListViewItem("Drag-drop Aax files here. The .cue files will be saved in the Aax file's folder.");
+			lvi.Font = new Font(lvi.Font, FontStyle.Italic);
+			lvi.ForeColor = Color.Gray;
+			listView1.Items.Add(lvi);
 		}
 
 		private void listView1_DragEnter(object sender, DragEventArgs e)
@@ -70,6 +78,10 @@ namespace AaxChaptersCue
 
 		public void AddFilesToQueue(string[] files)
 		{
+			var descLvi = listView1.Items.Cast<ListViewItem>().FirstOrDefault(lvi => lvi.Tag is null);
+			if (descLvi is not null)
+				listView1.Items.Remove(descLvi);
+
 			foreach (var f in files)
 			{
 				if (!fileQueue.Contains(f) && listIndex(f) is null)
@@ -91,6 +103,7 @@ namespace AaxChaptersCue
 			tokenSource?.Cancel();
 			fileQueue.Clear();
 			listView1.Items.Clear();
+			AddListviewInstruction();
 		}
 	}
 }
